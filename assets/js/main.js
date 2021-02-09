@@ -58,7 +58,7 @@ _Blog.scrollIndicator = function () {
 _Blog.changeTile = function () {
   const currentTile = document.title
   window.onblur = function () {
-    this.document.title = '别走啊，官人 _(:з」∠)_'
+    this.document.title = '🚔: こちを見ろ！'
   }
   window.onfocus = function () {
     this.document.title = currentTile
