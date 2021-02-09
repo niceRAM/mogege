@@ -12,6 +12,9 @@
 </style>
 {{ end }}
 
+{{ with .Site.Params.Social.Bilibili }}
+<a href="https://space.bilibili.com/{{.}}" target="_blank" rel="me noopener"><i class="iconfont icon-bilibili"></i></a>
+{{ end }}
 {{ with .Site.Params.Social.Github }}
 <a href="https://github.com/{{.}}" target="_blank" rel="me noopener"><i class="iconfont icon-github"></i></a>
 {{ end }}
