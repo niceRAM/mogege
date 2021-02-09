@@ -23,6 +23,10 @@
         </div>
     </header>
 
+    {{ if ( .Site.Params.toc | default true ) }}
+          {{ partial "toc.html" . }}
+	{{ end }}
+
     <div class="post-content">
         <!--featured_image-->
 
@@ -58,7 +62,7 @@
             {{ with .Permalink }}
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href={{ . }}>{{ . }}</span>
+                    <a href={{ . }}>{{ . }}</a>
             </p>
             {{ end }}
             {{ with .Site.Params.license }}
