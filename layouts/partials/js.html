@@ -36,6 +36,10 @@
 <script> pangu.spacingPage();</script>
 {{ end }}
 
+{{ if ( .Site.Params.toc | default true ) }}
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+{{ end }}
+
 {{ range .Site.Params.custom.js }}
 <!-- Custom -->>
 <script defer src="{{ . | absURL }}" ></script>
