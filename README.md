@@ -1,4 +1,4 @@
-# mogege
+# nicesima(偽島, ニセシマ)
 
 [![Hugo](https://img.shields.io/badge/hugo-0.68.3-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -8,15 +8,21 @@
 ![Screenshot](https://raw.githubusercontent.com/Mogeko/mogege/master/images/Screenshot.png)
 
 **This project is based on
+[mogege](https://github.com/Mogeko/mogege) which based on 
 [LeaveIt](https://raw.githubusercontent.com/liuzc/LeaveIt/)**
 
-Because the author of
-[LeaveIt](https://raw.githubusercontent.com/liuzc/LeaveIt/) seems to have
-abandoned this project, but I prefer this theme, so I simply reopened a new
-project.
+By [Mogeko](https://github.com/Mogeko), the author of [mogege](https://github.com/Mogeko/mogege):
+> Because the author of
+> [LeaveIt](https://raw.githubusercontent.com/liuzc/LeaveIt/) seems to have
+> abandoned this project, but I prefer this theme, so I simply reopened a new
+> project.
+> 
+> At this stage, I mainly integrate the part I modified with LeaveIt, and will add
+> more features in the future.
 
-At this stage, I mainly integrate the part I modified with LeaveIt, and will add
-more features in the future.
+I like this theme named [mogege](https://github.com/Mogeko/mogege), 
+but some features I need to modify it comply with my habits.
+So that maybe not fit the others.
 
 ## Features
 
@@ -31,30 +37,30 @@ more features in the future.
 - Support for embedded BiliBili video
 - Support hidden text ...
 
-Here is a table showing the similarities and differences between [mogege](https://github.com/Mogeko/mogege) and [LeaveIt](https://github.com/liuzc/LeaveIt):
+Here is a table showing the similarities and differences between [nicesima](https://github.com/niceRAM/nicesima) and [mogege](https://github.com/Mogeko/mogege) and [LeaveIt](https://github.com/liuzc/LeaveIt):
 
-| Features                    | mogege                                                       | LeaveIt |
-| --------------------------- | ------------------------------------------------------------ | ------- |
-| Categories                  | Yes                                                          | Yes     |
-| Tags                        | Yes                                                          | Yes     |
-| RSS support                 | Yes                                                          | Yes     |
-| sitemap.xml                 | Yes                                                          | Yes     |
-| robots.txt                  | Yes                                                          | Yes     |
-| Quote                       | Optimization                                                 | Yes     |
-| Images lazy loading         | Optimization[*](https://caniuse.com/#search=Lazy%20loading%20via%20attribute%20for%20images%20%26%20iframes) | Yes     |
-| Dark/Light Mode             | Optimization                                                 | Yes     |
-| Highlighting code           | Optimization                                                 | Yes     |
-| Comment area                | Optimization                                                 | Yes     |
-| TeX Functions               | Yes                                                          |         |
-| PlantUML                    | Yes                                                          |         |
-| BiliBili video (shortcodes) | Yes                                                          |         |
-| Hidden text (shortcodes)    | Yes                                                          |         |
-| Social button               | Yes                                                          | Yes     |
-| lightGallery                |                                                              | Yes     |
+| Features                    | *nicesima*   | mogege                                                       | LeaveIt |
+| --------------------------- | ------------ | ------------------------------------------------------------ | ------- |
+| Categories                  | Optimization | Yes                                                          | Yes     |
+| Tags                        | inherit      | Yes                                                          | Yes     |
+| RSS support                 | inherit      | Yes                                                          | Yes     |
+| sitemap.xml                 | inherit      | Yes                                                          | Yes     |
+| robots.txt                  | inherit      | Yes                                                          | Yes     |
+| Quote                       | inherit      | Optimization                                                 | Yes     |
+| Images lazy loading         | inherit      | Optimization[*](https://caniuse.com/#search=Lazy%20loading%20via%20attribute%20for%20images%20%26%20iframes) | Yes     |
+| Dark/Light Mode             | inherit      | Optimization                                                 | Yes     |
+| Highlighting code           | Optimization | Optimization                                                 | Yes     |
+| Comment area                | Optimization | Optimization                                                 | Yes     |
+| TeX Functions               | inherit      | Yes                                                          |         |
+| PlantUML                    | inherit      | Yes                                                          |         |
+| BiliBili video (shortcodes) | inherit      | Yes                                                          |         |
+| Hidden text (shortcodes)    | inherit      | Yes                                                          |         |
+| Social button               | Optimization | Yes                                                          | Yes     |
+| lightGallery                |              |                                                              | Yes     |
 
 ## Requirements
 
-Hugo 0.68.3 or higher
+Hugo-extended 0.68.3 or higher
 
 **Hugo extended version**, read more
 [here](https://gohugo.io/news/0.48-relnotes/)
@@ -64,13 +70,13 @@ Hugo 0.68.3 or higher
 Navigate to your hugo project root and run:
 
 ```bash
-git submodule add https://github.com/Mogeko/mogege themes/mogege
+git submodule add https://github.com/niceRAM/nicesima themes/nicesima
 ```
 
-Then run hugo (or set `theme: mogege` in configuration file)
+Then run hugo (or set `theme: nicesima` in configuration file)
 
 ```bash
-hugo server --minify --theme mogege
+hugo server --minify --theme nicesima
 ```
 
 ## Creating site from scratch
@@ -80,12 +86,12 @@ Below is example how to create new site from scratch
 ```bash
 hugo new site mydocs; cd mydocs
 git init
-git submodule add https://github.com/Mogeko/mogege  themes/mogege
-cp -R themes/mogege/exampleSite/content .
+git submodule add https://github.com/niceRAM/nicesima  themes/nicesima
+cp -R themes/nicesima/exampleSite/content .
 ```
 
 ```bash
-hugo server --minify --theme mogege
+hugo server --minify --theme nicesima
 ```
 
 ## Lazy loading
@@ -230,6 +236,10 @@ Then enable gitalk in config.toml
     enableGitalk = true
 ```
 
+> **Notice**: [The demo server of CORS Anywhere](cors-anywhere.herokuapp.com) has been very limited by January 2021, 31st.
+> If you'd like to enable Gitalk, you should build a personal proxy server by [cors-anywhere](https://github.com/Rob--W/cors-anywhere),
+> then set the url in ```proxy``` like the following.
+
 Then provide your `Client ID` and `Client Secret` from Github Application in
 config.toml
 
@@ -239,13 +249,14 @@ config.toml
     clientSecret = "[Client Secret]" # Your client secret
     repo = "" # The repo to store comments
     owner = "" # Your GitHub ID
-    admin= "" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
-    id= "location.pathname" # The unique id of the page.
-    labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
-    perPage= 15 # Pagination size, with maximum 100.
-    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
-    createIssueManually= true # If it is 'false', it is auto to make a Github issue when the administrators login.
-    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+    admin = "" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
+    id = "location.pathname" # The unique id of the page.
+    labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage = 15 # Pagination size, with maximum 100.
+    pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually = true # If it is 'false', it is auto to make a Github issue when the administrators login.
+    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
+    proxy = "" # the proxy built by cors-anywhere,.etc.
 ```
 
 ## Custom CSS/JavaScript
@@ -278,31 +289,39 @@ Then edit in `config.toml`:
 There are few configuration options you can add to your `config.toml` file.
 
 ```toml
-baseURL = "" # <head> 里面的 baseurl 信息，填你的博客地址
-title = "" # 浏览器的标题
-languageCode = "zh-cn" # 语言
-hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
-theme = "mogege" # 主题
+baseURL = ""            # <head> 里面的 baseurl 信息，填你的博客地址
+title = ""              # 浏览器的标题
+languageCode = "zh-cn"  # 语言
+hasCJKLanguage = true   # 开启可以让「字数统计」统计汉字
+theme = "nicesima"      # 主题
 
-paginate = 11 # 每页的文章数
-enableEmoji = true # 支持 Emoji
-enableRobotsTXT = true # 支持 robots.txt
+paginate = 11           # 每页的文章数
+enableEmoji = true      # 支持 Emoji
+enableRobotsTXT = true  # 支持 robots.txt
 
-
-preserveTaxonomyNames = true
-
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
+# Chroma 代码高亮 http://gohugo.io/content-management/syntax-highlighting/
+pygmentsUseClasses=true # 使用自定义的代码高亮样式
+[markup]
+  [markup.highlight]
+    codeFences = true
+    anchorLineNos = false
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
 
 [Permalinks]
-  posts = "/:year/:filename/"
+ posts = "/:year/:filename"
 
 [menu]
   [[menu.main]]
     name = "Blog"
-    url = "/post/"
+    url = "/posts/"
     weight = 1
 
   [[menu.main]]
@@ -321,42 +340,32 @@ preserveTaxonomyNames = true
     weight = 4
 
 [params]
-    since =
-    author = ""                         # Author's name
-    avatar = "/images/me/avatar.jpg"    # Author's avatar
-    subtitle = ""                       # Subtitle
-    home_mode = ""                      # post or other
-    enableGitalk = true                 # gitalk 评论系统
+  since = 2020
+  author = ""                         # Author's name
+  avatar = "/images/me/avatar.jpg"    # Author's avatar
+  subtitle = ""                       # Subtitle
+  home_mode = ""                      # post or other
+  enableGitalk = true                 # gitalk 评论系统
 
-    google_verification = ""
+  description = ""                    # (Meta) 描述
+  keywords = ""                       # site keywords
+  license = '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
-    description = "" # (Meta) 描述
-    keywords = "" # site keywords
+  toc = true                          # switch catalog
+  autoCollapseToc = false             # auto expand and collapse toc
 
-    beian = ""
-    baiduAnalytics = ""
-    googleAnalytics = "" # Google 统计 id
-
-    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
-
-[params.gitalk] # Github: https://github.com/gitalk/gitalk
-    clientID = "" # Your client ID
+  [params.gitalk] # Github: https://github.com/gitalk/gitalk
+    clientId = "" # Your client ID
     clientSecret = "" # Your client secret
     repo = "" # The repo to store comments
     owner = "" # Your GitHub ID
-    admin= "" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
-    id= "location.pathname" # The unique id of the page.
-    labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
-    perPage= 15 # Pagination size, with maximum 100.
-    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
-    createIssueManually= true # If it is 'false', it is auto to make a Github issue when the administrators login.
-    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+    admin = "" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
+    id = "location.pathname" # The unique id of the page.
+    labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage = 15 # Pagination size, with maximum 100.
+    pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually = false # If it is 'false', it is auto to make a Github issue when the administrators login.
+    distractionFreeMode = true # Enable hot key (cmd|ctrl + enter) submit comment.
+    proxy = "" # the proxy built by cors-anywhere,.etc.
 
 ```
-
----
-
-> The name of this project comes from the game
-> [_Mogeko Castle_](https://okegom.fandom.com/wiki/Mogeko_Castle), and the
-> [author](https://github.com/Mogeko)'s name also comes from this game. (this is
-> another story)
