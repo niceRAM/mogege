@@ -90,7 +90,24 @@ _Blog.addCopyBottons = function () {
       button.innerText = 'Copy'
 
       button.addEventListener('click', function () {
-        clipboard.writeText(codeBlock.innerText).then(function () {
+        // 20210303 fix #2: 按下代码块[Copy]按钮，linenos也会被一起复制
+        if ($("span.ln", codeBlock)) {
+          codes = []
+          codeBlock.querySelectorAll('span').forEach(function (codeSpan, i) {
+            if ($(codeSpan).hasClass("ln")) {
+              if (i > 0) {
+                codes.push("\n")
+              }
+            } else {
+              codes.push(codeSpan.innerText)
+            }
+          })
+          codeText = codes.join("")
+        } else {
+          codeText = codeBlock.innerText
+        }
+
+        clipboard.writeText(codeText).then(function () {
           /* Chrome doesn't seem to blur automatically,
                        leaving the button in a focused state. */
           button.blur()
