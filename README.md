@@ -1,6 +1,6 @@
 # nicesima(偽島, ニセシマ)
 
-[![Hugo](https://img.shields.io/badge/hugo-0.68.3-blue.svg)](https://gohugo.io)
+[![Hugo](https://img.shields.io/badge/hugo-0.80.0-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ### A blog theme for [Hugo](https://gohugo.io).
@@ -21,8 +21,8 @@ By [Mogeko](https://github.com/Mogeko), the author of [mogege](https://github.co
 > more features in the future.
 
 I like this theme named [mogege](https://github.com/Mogeko/mogege), 
-but some features I need to modify it comply with my habits.
-So that maybe not fit the others.
+but **some features is modified** for complying with my habits.
+So **that maybe not fit the others**.
 
 ## Features
 
@@ -60,7 +60,7 @@ Here is a table showing the similarities and differences between [nicesima](http
 
 ## Requirements
 
-Hugo-extended 0.68.3 or higher
+Hugo-extended 0.80.0 or higher
 
 **Hugo extended version**, read more
 [here](https://gohugo.io/news/0.48-relnotes/)
