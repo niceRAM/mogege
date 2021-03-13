@@ -56,9 +56,9 @@
             <p class="copyright-item">
                 <span>Author:</span>
                 <span>{{ . }} </span>
-                </p>
+            </p>
             {{ end }}
-
+            
             {{ with .Permalink }}
             <p class="copyright-item">
                     <span>Link:</span>
@@ -97,6 +97,14 @@
         <a href="{{.NextInSection.Permalink}}" class="next" rel="next" title="{{.NextInSection.Title}}">{{.NextInSection.Title}}&nbsp;<i class="iconfont icon-right"></i></a>
         {{ end }}
     </div>
+
+    {{ if .Params.showPostSocialLinks | default true}}
+    <div class="post-social">
+        <div class="social-links">
+            {{ partial "social.html" . }}
+        </div>
+    </div>
+    {{ end }}
 
     <div class="post-comment">
         {{ if ( $.Params.showComments | default true ) }}
