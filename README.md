@@ -39,24 +39,26 @@ So **that maybe not fit the others**.
 
 Here is a table showing the similarities and differences between [nicesima](https://github.com/niceRAM/nicesima) and [mogege](https://github.com/Mogeko/mogege) and [LeaveIt](https://github.com/liuzc/LeaveIt):
 
-| Features                    | *nicesima*   | mogege                                                       | LeaveIt |
-| --------------------------- | ------------ | ------------------------------------------------------------ | ------- |
-| Categories                  | Optimization | Yes                                                          | Yes     |
-| Tags                        | inherit      | Yes                                                          | Yes     |
-| RSS support                 | inherit      | Yes                                                          | Yes     |
-| sitemap.xml                 | inherit      | Yes                                                          | Yes     |
-| robots.txt                  | inherit      | Yes                                                          | Yes     |
-| Quote                       | inherit      | Optimization                                                 | Yes     |
-| Images lazy loading         | inherit      | Optimization[*](https://caniuse.com/#search=Lazy%20loading%20via%20attribute%20for%20images%20%26%20iframes) | Yes     |
-| Dark/Light Mode             | inherit      | Optimization                                                 | Yes     |
-| Highlighting code           | Optimization | Optimization                                                 | Yes     |
-| Comment area                | Optimization | Optimization                                                 | Yes     |
-| TeX Functions               | inherit      | Yes                                                          |         |
-| PlantUML                    | inherit      | Yes                                                          |         |
-| BiliBili video (shortcodes) | inherit      | Yes                                                          |         |
-| Hidden text (shortcodes)    | inherit      | Yes                                                          |         |
-| Social button               | Optimization | Yes                                                          | Yes     |
-| lightGallery                |              |                                                              | Yes     |
+| Features                        | *nicesima*   | mogege                                                       | LeaveIt |
+| ------------------------------- | ------------ | ------------------------------------------------------------ | ------- |
+| Categories                      | Optimization | Yes                                                          | Yes     |
+| Tags                            | inherit      | Yes                                                          | Yes     |
+| RSS support                     | inherit      | Yes                                                          | Yes     |
+| sitemap.xml                     | inherit      | Yes                                                          | Yes     |
+| robots.txt                      | inherit      | Yes                                                          | Yes     |
+| Quote                           | inherit      | Optimization                                                 | Yes     |
+| Images lazy loading             | inherit      | Optimization[*](https://caniuse.com/#search=Lazy%20loading%20via%20attribute%20for%20images%20%26%20iframes) | Yes     |
+| Dark/Light Mode                 | inherit      | Optimization                                                 | Yes     |
+| Highlighting code               | Optimization | Optimization                                                 | Yes     |
+| Comment area                    | Optimization | Optimization                                                 | Yes     |
+| TeX Functions                   | inherit      | Yes                                                          |         |
+| PlantUML                        | inherit      | Yes                                                          |         |
+| BiliBili video (shortcodes)     | inherit      | Yes                                                          |         |
+| Hidden text (shortcodes)        | Optimization | Yes                                                          |         |
+| Easy-searched text (shortcodes) | Yes          |                                                              |         |
+| Social button                   | Optimization | Yes                                                          | Yes     |
+| TOC                             | Yes          |                                                              |         |
+| lightGallery                    |              |                                                              | Yes     |
 
 ## Requirements
 
@@ -192,6 +194,65 @@ You can use "hidden text" to hide spoiler content
 ```
 
 Click [here](https://mogeko.github.io/2020/080#spoiler) for examples
+
+## Easy-searched text
+
+You can use "Easy-searched text" to set as a link for proper nouns that only need to search to find relevant explanations. For readers, just click on the links to search easily.
+
+```txt
+{{< es Easy-searched-text >}}
+```
+
+You can also use the `search-engine` to choose which engine to use.
+
+```txt
+{{< es Easy-searched-text search-engine >}}
+```
+
+By default, `Google` will be used. You can change it to others by the following.
+
+```txt
+# Use "Bing"
+{{< es Easy-searched-text bing >}}
+
+# Use "GitHub"
+{{< es Easy-searched-text github >}}
+or
+{{< es Easy-searched-text gh >}}
+
+# Use "Bilibili"
+{{< es Easy-searched-text bilibili >}}
+or
+{{< es Easy-searched-text blbl >}}
+
+# Use "Baidu"
+{{< es Easy-searched-text baidu >}}
+or
+{{< es Easy-searched-text bd >}}
+```
+
+And you can set any of the above search engines as the default in `config.toml` by the following: 
+
+```toml
+[params]
+  easySearchedEngine = "github"
+```
+
+## TOC
+
+The TOC can be enabled by the following config.
+
+```toml
+[params]
+  toc = true
+```
+
+And you can fold inactive TOC automatically:
+
+```toml
+[params]
+autoCollapseToc = true
+```
 
 ## utteranc comment system
 
