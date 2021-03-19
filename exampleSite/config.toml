@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://nicesima.niceram.xyz"
 title = "NiceBlog"
 languageCode = "zh-cn" # 语言
 hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
@@ -25,7 +25,7 @@ pygmentsUseClasses = true # 使用自定义的代码高亮样式
     tabWidth = 4
 
 [Permalinks]
-  posts = "/:year/:filename/"
+ posts = "/:year/:month/:day/:filename"
 
 [menu]
   [[menu.main]]
