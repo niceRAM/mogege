@@ -2,9 +2,10 @@
   position: relative;
 
   .copy-code-button {
-    display: none;
+    display: inline-block;
+    opacity: 0;
     position: absolute;
-    bottom: 4px;
+    top: 6px;
     right: 7px;
     border: 0;
     border-radius: 4px;
@@ -15,10 +16,12 @@
     background-color: #777;
     min-width: 55px;
     text-align: center;
+    transition: opacity 300ms;
   }
 
   &:hover .copy-code-button {
-    display: inline-block;
+    opacity: 1;
+    transition: opacity 300ms;
   }
 
   .copy-code-button:hover {
@@ -26,22 +29,74 @@
   }
 }
 
+code {
+  font-family: 'Cascadia Code', 'Fira Code', Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
+.post-warp .post-content code:not([class]) {
+  padding: 2px 6px;
+  margin: 0 2px;
+  background: #e2e2e2;
+  border-radius: 5px;
+
+  .dark-theme & {
+    background: $dark-code-notclass-background-color;
+  }
+}
 
 /* Background */
 .chroma {
   color: #f8f8f2;
   background: $light-code-notclass-background-color;
+  overflow-x: scroll;
 
   .dark-theme & {
     background: $dark-code-notclass-background-color;
   }
 
-  code {
-    font-family: 'Fira Code', Consolas, Monaco, Menlo, Consolas, monospace;
+  &::-webkit-scrollbar {
+    opacity: 0;
+    width: 11px;
+    height: $scrollbar-thickness;
+    transition: opacity 300ms;
+
+    .chroma:hover & {
+      opacity: 1;
+      transition: opacity 300ms;
+    }
+  }
+  
+  &::-webkit-scrollbar-track {
+    opacity: 1;
+    background-color: $light-background-color;
+
+    .dark-theme & {
+      background-color: $dark-background-color;
+    }
   }
 
-  white-space: pre-wrap; //add this line to word wrap，disable the horizontal scroll bar
-  word-wrap: break-word; //add this line to word wrap，disable the horizontal scroll bar
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: $light-scrollbar-thumb-color;
+    height: $scrollbar-thickness;
+
+    .dark-theme & {
+      background-color: $dark-scrollbar-thumb-color;
+    }
+
+    &:hover {
+      background-color: $light-scrollbar-thumb-hover-color;
+
+      .dark-theme & {
+        background-color: $dark-scrollbar-thumb-hover-color;
+      }
+    }
+
+    border-radius: 2em;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
 }
 
 /* Other */
