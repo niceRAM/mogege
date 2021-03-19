@@ -1,20 +1,28 @@
 baseURL = "https://example.com"
-title = "Mogeko`s Blog" # 浏览器的标题
+title = "NiceBlog"
 languageCode = "zh-cn" # 语言
 hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
-theme = "mogege" # 主题 (需要自己下载)
+theme = "nicesima" # 主题 (需要自己下载)
 
 paginate = 11 # 每页的文章数
 enableEmoji = true # 支持 Emoji
 enableRobotsTXT = true # 支持 robots.txt
 
-
-preserveTaxonomyNames = true
-
-[blackfriday]
-  hrefTargetBlank = true
-  nofollowLinks = true
-  noreferrerLinks = true
+# Chroma 代码高亮 http://gohugo.io/content-management/syntax-highlighting/
+pygmentsUseClasses = true # 使用自定义的代码高亮样式
+[markup]
+  [markup.highlight]
+    codeFences = true
+    anchorLineNos = false
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
 
 [Permalinks]
   posts = "/:year/:filename/"
@@ -22,7 +30,7 @@ preserveTaxonomyNames = true
 [menu]
   [[menu.main]]
     name = "Blog"
-    url = "/post/"
+    url = "/posts/"
     weight = 1
 
   [[menu.main]]
@@ -41,23 +49,20 @@ preserveTaxonomyNames = true
     weight = 4
 
 [params]
-    since = 2017
-    author = "Mogeko"                          # Author's name
-    avatar = "https://mogeko.me/blog-images/r/me/avatar.jpg"           # Author's avatar
-    subtitle = "Just for Fun"                  # Subtitle
-    home_mode = "" # post or other
-    enableGitalk = true # gitalk 评论系统
+  since = "2018" # 站点建立时间
+  author = "niceRAM" # 作者名字
+  avatar = "https://avatars.githubusercontent.com/u/23020764?s=460&u=e484ebce04cd653b5610b25bc34551ab693b500d&v=4"
+  subtitle = "The mountain of books has a road but I'm at a loss, and the sea of learning is unlimited so that I'm inundated." # 子标题
+  description = "niceRAM's Blog" # (Meta) 描述
+  license = '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
-    google_verification = ""
-
-    description = "Mogeko 的个人博客" # (Meta) 描述
-    keywords = "" # site keywords
-
-    beian = ""
-    baiduAnalytics = ""
-    googleAnalytics = "UA-104502658-2" # Google 统计 id
-
-    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+  enableGitalk = true # gitalk 评论系统
+  enableUtteranc = false
+  showPostSocialLinks = true # 开启每一篇文章的 social-links 显示 (与主页显示与否无关)
+  easySearchedEngine = "google"
+  toc = true # 是否开启目录
+  autoCollapseToc = true   # 自动收起目录
+  mathjax = true # 是否使用mathjax（数学公式）
 
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "" # Your client ID
