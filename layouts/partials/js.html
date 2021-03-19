@@ -5,6 +5,7 @@
 {{ $main := slice  $highlight $main | resources.Concat "/js/vendor_main.js" | resources.Minify}}
 <!-- Main -->
 <script defer src="{{ printf "%s" $main.RelPermalink }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" crossorigin="anonymous"></script>
 
 {{ if or .Page.Params.math .Site.Params.math }}
 <!-- KaTeX -->
@@ -37,6 +38,6 @@
 {{ end }}
 
 {{ range .Site.Params.custom.js }}
-<!-- Custom -->>
+<!-- Custom -->
 <script defer src="{{ . | absURL }}" ></script>
 {{ end }}

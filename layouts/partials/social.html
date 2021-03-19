@@ -12,6 +12,9 @@
 </style>
 {{ end }}
 
+{{ with .Site.Params.Social.Bilibili }}
+<a href="https://space.bilibili.com/{{.}}" target="_blank" rel="me noopener"><i class="iconfont icon-bilibili"></i></a>
+{{ end }}
 {{ with .Site.Params.Social.Github }}
 <a href="https://github.com/{{.}}" target="_blank" rel="me noopener"><i class="iconfont icon-github"></i></a>
 {{ end }}
@@ -31,7 +34,7 @@
 <a href="https://facebook.com/{{.}}" rel="me noopener"><i class="iconfont icon-facebook"></i></a>
 {{ end }}
 {{ with .Site.Params.Social.Telegram}}
-<a href="https://t.me/{{.}}" rel="me noopener"><i class="iconfont icon-telegram"></i></a>
+<a href="https://t.me/{{.}}" target="_blank" rel="me noopener"><i class="iconfont icon-telegram"></i></a>
 {{ end }}
 {{ with .Site.Params.Social.Dribbble}}
 <a href="https://dribbble.com/{{.}}" rel="me noopener"><i class="iconfont icon-dribbble"></i></a>

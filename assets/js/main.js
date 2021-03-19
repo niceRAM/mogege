@@ -1,6 +1,18 @@
 
 var _Blog = _Blog || {}
 
+// https://stackoverflow.com/a/10284006
+function zip() {
+  var args = [].slice.call(arguments);
+  var longest = args.reduce(function(a,b){
+      return a.length>b.length ? a : b
+  }, []);
+
+  return longest.map(function(_,i){
+      return args.map(function(array){return array[i]})
+  });
+}
+
 // Dark Mode
 _Blog.switchDarkMode = function () {
   const currentTheme = document.cookie.replace(/(?:(?:^|.*;\s*)dark\s*=\s*([^;]*).*$)|^.*$/, '$1') || '0'
@@ -58,7 +70,13 @@ _Blog.scrollIndicator = function () {
 _Blog.changeTile = function () {
   const currentTile = document.title
   window.onblur = function () {
-    this.document.title = '别走啊，官人 _(:з」∠)_'
+    titles = [
+      '☕趁机摸🐟',
+      '🚔こちを見ろ！',
+      '👻你看不见我~你看不见我~',
+      '🎶少し休んでもいいぞ～',
+    ]
+    this.document.title = titles[Math.floor(Math.random() * titles.length)]
   }
   window.onfocus = function () {
     this.document.title = currentTile
@@ -90,7 +108,19 @@ _Blog.addCopyBottons = function () {
       button.innerText = 'Copy'
 
       button.addEventListener('click', function () {
-        clipboard.writeText(codeBlock.innerText).then(function () {
+        // 20210303 fix #2,#4
+        codes = []
+        zip(
+          codeBlock.querySelectorAll('span.ln'),
+          codeBlock.innerText.split('\n'))
+          .forEach(codeMap => {
+            if (codeMap[0] && codeMap[1]) {
+              codes.push(codeMap[1].replace(codeMap[0].innerText, ''))
+            }
+          })
+        codeText = codes.join('\n')
+
+        clipboard.writeText(codeText).then(function () {
           /* Chrome doesn't seem to blur automatically,
                        leaving the button in a focused state. */
           button.blur()
