@@ -10,16 +10,18 @@
 @import url('https://cdn.jsdelivr.net/npm/firacode@3.1.0/distr/fira_code.min.css');
 
 html {
+  scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    height: $scrollbar-thickness;
+    width: $scrollbar-thickness;
   }
   &::-webkit-scrollbar-thumb {
     height: 40px;
-    background-color: #eee;
-    border-radius: 16px;
+    width: 40px;
+    border-radius: 2em;
+    background-color: $light-scrollbar-thumb-color;
     &:hover {
-    background-color: #ddd;
+      background-color: $light-scrollbar-thumb-hover-color;
     }
   }
 }
@@ -74,14 +76,14 @@ a {
   }
 
   .dark-theme & {
-  color: $dark-global-link-color;
-  text-decoration: none;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
-
-  &:hover{
-    color: $dark-global-link-hover-color;
+    color: $dark-global-link-color;
     text-decoration: none;
     transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      color: $dark-global-link-hover-color;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
     }
   }
 }
