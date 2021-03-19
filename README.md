@@ -39,7 +39,7 @@ So **that maybe not fit the others**.
 
 Here is a table showing the similarities and differences between [nicesima](https://github.com/niceRAM/nicesima) and [mogege](https://github.com/Mogeko/mogege) and [LeaveIt](https://github.com/liuzc/LeaveIt):
 
-| Features                        | *nicesima*   | mogege                                                       | LeaveIt |
+| Features                        | *nicesima*   | [mogege(81e57f)](https://github.com/Mogeko/mogege/commit/7c7e26d0b04fb04a0d5c69d837c26823d881e57f) | LeaveIt |
 | ------------------------------- | ------------ | ------------------------------------------------------------ | ------- |
 | Categories                      | Optimization | Yes                                                          | Yes     |
 | Tags                            | inherit      | Yes                                                          | Yes     |
