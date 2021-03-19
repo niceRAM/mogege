@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noodp"/>
-    <meta name="author" content="Mogeko">
-    <meta name="description" content="Mogeko 的个人博客">
+    <meta name="author" content="niceRAM">
+    <meta name="description" content="niceRAM&#39;s Blog">
     
     
-    <link rel="prev" href="https://example.com/post/rich-content/" />
+    <link rel="prev" href="https://nicesima.niceram.xyz/2019/03/10/rich-content/" />
     
-    <link rel="canonical" href="https://example.com/post/markdown-syntax/" />
+    <link rel="canonical" href="https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,12 +22,17 @@
     <title>
         
         
-            Markdown Syntax Guide | Mogeko`s Blog
+            Markdown Syntax Guide | NiceBlog
         
     </title>
-    <meta name="title" content="Markdown Syntax Guide | Mogeko`s Blog">
+    <meta name="title" content="Markdown Syntax Guide | NiceBlog">
     
 <link rel="stylesheet" href="/css/main.min.css">
+
+
+<link rel="stylesheet" href="/font/iconfont.css">
+
+<link rel="stylesheet" href="/font-ali/iconfont.css">
 
 
     
@@ -40,9 +45,9 @@
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "https:\/\/example.com"
+         "@id": "https:\/\/nicesima.niceram.xyz"
     },
-    "articleSection" : "post",
+    "articleSection" : "posts",
     "name" : "Markdown Syntax Guide",
     "headline" : "Markdown Syntax Guide",
     "description" : "Sample article showcasing basic Markdown syntax and formatting for HTML elements.",
@@ -53,11 +58,11 @@
     "accountablePerson" : "Hugo Authors",
     "copyrightHolder" : "Hugo Authors",
     "copyrightYear" : "2019",
-    "datePublished": "2019-03-11 00:00:00 \x2b0000 UTC",
-    "dateModified" : "2019-03-11 00:00:00 \x2b0000 UTC",
-    "url" : "https:\/\/example.com\/post\/markdown-syntax\/",
-    "wordCount" : "439",
-    "keywords" : [ "markdown","css","html","themes", "Mogeko`s Blog"]
+    "datePublished": "2019-03-11 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2019-03-11 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/nicesima.niceram.xyz\/2019\/03\/11\/markdown-syntax\/",
+    "wordCount" : "442",
+    "keywords" : [ "markdown","css","html","themes", "NiceBlog"]
 }
 </script>
 
@@ -72,7 +77,7 @@
         
             <div class="navbar-header header-back2home-logo">
                 <span class="logo_mark" >>$</span>
-                <a href="https://example.com">
+                <a href="https://nicesima.niceram.xyz">
                     <span class="logo_text" >cd /home/</span>
                     <span class="logo_cursor" ></span>
                 </a>
@@ -82,7 +87,7 @@
                 
                 <span class="menu">
                 
-                <a class="menu-item" href="/post/" title="">Blog</a>
+                <a class="menu-item" href="/posts/" title="">Blog</a>
                 
                 <a class="menu-item" href="/categories/" title="">Categories</a>
                 
@@ -103,7 +108,7 @@
      <div class="container">
         <div class="navbar">
             <div class="navbar-header header-logo">
-                    <a href="https://example.com">Mogeko`s Blog</a>
+                    <a href="https://nicesima.niceram.xyz">NiceBlog</a>
             </div>
             <div class="navbar-right">
                 <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
@@ -117,7 +122,7 @@
                 <nav class="mb-md">
                     
                     
-                        <a class="menu-item" href="/post/" title="">
+                        <a class="menu-item" href="/posts/" title="">
                             <h3>Blog</h3>
                             <div class="menu-active"></div>
                         </a>
@@ -148,7 +153,7 @@
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">Markdown Syntax Guide</h1>
         <div class="post-meta">
-                Written by <a itemprop="name" href="https://example.com" rel="author">Hugo Authors</a> with ♥
+                Written by <a itemprop="name" href="https://nicesima.niceram.xyz" rel="author">Hugo Authors</a> with ♥
                 <span class="post-time">
                 on <time datetime=2019-03-11 itemprop="datePublished">March 11, 2019</time>
                 </span>
@@ -159,18 +164,93 @@
                         
                         
                         
-                          <a href="https://example.com/categories/themes/"> themes, </a>
+                          <a href="https://nicesima.niceram.xyz/categories/themes/"> themes, </a>
                         
                         
                         
                         
-                          <a href="https://example.com/categories/syntax/"> syntax, </a>
+                          <a href="https://nicesima.niceram.xyz/categories/syntax/"> syntax, </a>
                         
                         
                 </span>
-                <span class="post-word-count">439 words</span>
+                <span class="post-word-count">442 words</span>
         </div>
     </header>
+
+    
+          <div class="post-toc" id="post-toc">
+   <h2 class="post-toc-title"></h2>
+   
+   <div class="post-toc-content">
+     <nav id="TableOfContents">
+  <ul>
+    <li><a href="#headings">Headings</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#h2">H2</a>
+      <ul>
+        <li><a href="#h3">H3</a></li>
+      </ul>
+    </li>
+    <li><a href="#paragraph">Paragraph</a></li>
+    <li><a href="#blockquotes">Blockquotes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#tables">Tables</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#code-blocks">Code Blocks</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#list-types">List Types</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</a></li>
+  </ul>
+</nav>
+   </div>
+ </div>
+ <script type="text/javascript">
+   window.onload = function () {
+     var fix = $('.post-toc');
+     var end = $('.post-comment');
+     var fixTop = fix.offset().top, fixHeight = fix.height();
+     var endTop, miss;
+     var offsetTop = fix[0].offsetTop;
+     $('.post-toc-content:not(.always-active) a').click(function (e) {
+      $('.post-toc-content li').removeClass('has-active');
+      $(e.target).parents('.post-toc-content li').addClass('has-active');
+     })
+     $(window).scroll(function () {
+       var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+       if (end.length > 0) {
+         endTop = end.offset().top;
+         miss = endTop - docTop - fixHeight;
+       }
+       if (fixTop < docTop) {
+         fix.css({ 'position': 'fixed' });
+         if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+           fix.css({ top: miss });
+         } else {
+           fix.css({ top: 0 });
+         }
+       } else {
+         fix.css({ 'position': 'absolute' });
+         fix.css({ top: offsetTop });
+       }
+     }).scroll()
+   }
+ </script> 
+	
 
     <div class="post-content">
         
@@ -277,16 +357,16 @@
 &lt;/html&gt;
 </code></pre>
 <h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln"> 1</span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="ln"> 2</span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 3</span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 4</span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+<span class="ln"> 5</span>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="ln"> 6</span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="ln"> 7</span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln"> 8</span>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="ln"> 9</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="ln">10</span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="list-types">List Types</h2>
 <h4 id="ordered-list">Ordered List</h4>
 <ol>
@@ -328,14 +408,14 @@
             
             <p class="copyright-item">
                 <span>Author:</span>
-                <span>Mogeko </span>
-                </p>
+                <span>niceRAM </span>
+            </p>
             
-
+            
             
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://example.com/post/markdown-syntax/>https://example.com/post/markdown-syntax/</span>
+                    <a href=https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/>https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/</a>
             </p>
             
             
@@ -351,32 +431,52 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s):
             
-            <span class="tag"><a href="https://example.com/tags/markdown/">
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/markdown/">
                     #markdown</a></span>
             
-            <span class="tag"><a href="https://example.com/tags/css/">
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/css/">
                     #css</a></span>
             
-            <span class="tag"><a href="https://example.com/tags/html/">
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/html/">
                     #html</a></span>
             
-            <span class="tag"><a href="https://example.com/tags/themes/">
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/themes/">
                     #themes</a></span>
             
             </section>
         
         <section>
                 <a href="javascript:window.history.back();">back</a></span> ·
-                <span><a href="https://example.com">home</a></span>
+                <span><a href="https://nicesima.niceram.xyz">home</a></span>
         </section>
     </div>
 
     <div class="post-nav">
         
-        <a href="https://example.com/post/rich-content/" class="prev" rel="prev" title="Rich Content"><i class="iconfont icon-left"></i>&nbsp;Rich Content</a>
+        <a href="https://nicesima.niceram.xyz/2019/03/10/rich-content/" class="prev" rel="prev" title="Rich Content"><i class="iconfont icon-left"></i>&nbsp;Rich Content</a>
         
         
     </div>
+
+    
+    <div class="post-social">
+        <div class="social-links">
+            
+
+
+
+
+
+ 
+
+
+
+
+
+
+        </div>
+    </div>
+    
 
     <div class="post-comment">
         
@@ -392,6 +492,7 @@
         repo: '',
         owner: '',
         admin: [''],
+        proxy: '',
         id: location.pathname, 
         distractionFreeMode: false 
     });
@@ -414,17 +515,15 @@
     <div class="copyright">
         &copy;
         
-        <span itemprop="copyrightYear">2017 - 2020</span>
+        <span itemprop="copyrightYear">2018 - 2021</span>
         
-        <span class="with-love">
-    	 <i class="iconfont icon-love"></i>
-         </span>
+        <span class="rotating">🌸</span>
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://example.com">Mogeko</a> | </span>
+            <span class="author" itemprop="copyrightHolder"><a href="https://nicesima.niceram.xyz">niceRAM</a> | </span>
          
 
          
-		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/niceRAM/nicesima" target="_blank" rel="external nofollow">nicesima</a></span>
     </div>
 </footer>
 
@@ -432,12 +531,22 @@
 
 
 
-<script src="/js/vendor_main.min.js" defer ></script>
+
+<script defer src="/js/vendor_main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script> pangu.spacingPage();</script>
+
+
+
+
 
         </div>
     </body>

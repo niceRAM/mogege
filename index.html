@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>
-	<meta name="generator" content="Hugo 0.69.2" />
+	<meta name="generator" content="Hugo 0.80.0" />
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noodp"/>
-    <meta name="author" content="Mogeko">
-    <meta name="description" content="Mogeko 的个人博客">
+    <meta name="author" content="niceRAM">
+    <meta name="description" content="niceRAM&#39;s Blog">
     
     
     
     
-    <link rel="canonical" href="https://example.com/" />
+    <link rel="canonical" href="https://nicesima.niceram.xyz/" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,17 +23,22 @@
     <title>
         
         
-            Mogeko`s Blog
+            NiceBlog
         
     </title>
-    <meta name="title" content="Mogeko`s Blog">
+    <meta name="title" content="NiceBlog">
     
 <link rel="stylesheet" href="/css/main.min.css">
 
 
+<link rel="stylesheet" href="/font/iconfont.css">
+
+<link rel="stylesheet" href="/font-ali/iconfont.css">
+
+
     
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Mogeko`s Blog">
-    <link rel="feed" href="/index.xml" type="application/rss+xml" title="Mogeko`s Blog">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="NiceBlog">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title="NiceBlog">
     
     
 
@@ -41,13 +46,13 @@
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "url": "https:\/\/example.com\/",
-    "name": "Mogeko`s Blog",
+    "url": "https:\/\/nicesima.niceram.xyz\/",
+    "name": "NiceBlog",
     "author": {
         "@type": "Person",
-        "name": "Mogeko"
+        "name": "niceRAM"
     },
-    "description": "Mogeko 的个人博客",
+    "description": "niceRAM\u0027s Blog",
 }
 </script>
  
@@ -60,14 +65,14 @@
     <div class="container">
         
             <div class="navbar-header header-logo">
-                <a href="https://example.com">Mogeko`s Blog</a>
+                <a href="https://nicesima.niceram.xyz">NiceBlog</a>
             </div>
         
         <div class="navbar-right">
                 
                 <span class="menu">
                 
-                <a class="menu-item" href="/post/" title="">Blog</a>
+                <a class="menu-item" href="/posts/" title="">Blog</a>
                 
                 <a class="menu-item" href="/categories/" title="">Categories</a>
                 
@@ -86,7 +91,7 @@
      <div class="container">
         <div class="navbar">
             <div class="navbar-header header-logo">
-                    <a href="https://example.com">Mogeko`s Blog</a>
+                    <a href="https://nicesima.niceram.xyz">NiceBlog</a>
             </div>
             <div class="navbar-right">
                 <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
@@ -100,7 +105,7 @@
                 <nav class="mb-md">
                     
                     
-                        <a class="menu-item" href="/post/" title="">
+                        <a class="menu-item" href="/posts/" title="">
                             <h3>Blog</h3>
                             <div class="menu-active"></div>
                         </a>
@@ -132,15 +137,52 @@
     
     
     <div class="avatar">
-        <a href="/posts/"> <img src="https://mogeko.me/blog-images/r/me/avatar.jpg"> </a>
+        <a href="/posts/"> <img src="https://avatars.githubusercontent.com/u/23020764?s=460&amp;u=e484ebce04cd653b5610b25bc34551ab693b500d&amp;v=4"> </a>
     </div>
     
     
-    <h2 class="description">
-       Just for Fun
-    </h2>
+    <div id="subtitle">
+    </div>
+    </body>
+    <script>
+      let divTyping = document.getElementById('subtitle')
+      let i = 0,
+        timer = 0,
+        str = 'The mountain of books has a road but I\u0027m at a loss, and the sea of learning is unlimited so that I\u0027m inundated.'
     
+      function typing () {
+        if (i <= str.length) {
+          divTyping.innerHTML = str.slice(0, i++) + '_'
+          timer = setTimeout(typing, 24)
+        }
+        else {
+          divTyping.innerHTML = str
+          clearTimeout(timer)
+        }
+      }
+      typing()
+    </script>
+    
+    <div class="social-links">
+        
+
+
+
+
+
+ 
+
+
+
+
+
+
+    </div>
 </div>
+
+
+    
+
   
 
                 </div>
@@ -149,17 +191,15 @@
     <div class="copyright">
         &copy;
         
-        <span itemprop="copyrightYear">2017 - 2020</span>
+        <span itemprop="copyrightYear">2018 - 2021</span>
         
-        <span class="with-love">
-    	 <i class="iconfont icon-love"></i>
-         </span>
+        <span class="rotating">🌸</span>
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://example.com">Mogeko</a> | </span>
+            <span class="author" itemprop="copyrightHolder"><a href="https://nicesima.niceram.xyz">niceRAM</a> | </span>
          
 
          
-		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/niceRAM/nicesima" target="_blank" rel="external nofollow">nicesima</a></span>
     </div>
 </footer>
 
@@ -167,12 +207,22 @@
 
 
 
-<script src="/js/vendor_main.min.js" defer ></script>
+
+<script defer src="/js/vendor_main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script> pangu.spacingPage();</script>
+
+
+
+
 
         </div>
     </body>

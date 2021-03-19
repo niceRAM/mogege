@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noodp"/>
-    <meta name="author" content="Mogeko">
-    <meta name="description" content="Mogeko 的个人博客">
+    <meta name="author" content="niceRAM">
+    <meta name="description" content="niceRAM&#39;s Blog">
     
     
-    
-    <link rel="next" href="https://example.com/post/math-typesetting/" />
-    <link rel="canonical" href="https://example.com/post/emoji-support/" />
+    <link rel="prev" href="https://nicesima.niceram.xyz/2019/03/09/placeholder-text/" />
+    <link rel="next" href="https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/" />
+    <link rel="canonical" href="https://nicesima.niceram.xyz/2019/03/10/rich-content/" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,12 +22,17 @@
     <title>
         
         
-            Emoji Support | Mogeko`s Blog
+            Rich Content | NiceBlog
         
     </title>
-    <meta name="title" content="Emoji Support | Mogeko`s Blog">
+    <meta name="title" content="Rich Content | NiceBlog">
     
 <link rel="stylesheet" href="/css/main.min.css">
+
+
+<link rel="stylesheet" href="/font/iconfont.css">
+
+<link rel="stylesheet" href="/font-ali/iconfont.css">
 
 
     
@@ -40,12 +45,12 @@
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "https:\/\/example.com"
+         "@id": "https:\/\/nicesima.niceram.xyz"
     },
-    "articleSection" : "post",
-    "name" : "Emoji Support",
-    "headline" : "Emoji Support",
-    "description" : "Guide to emoji usage in Hugo",
+    "articleSection" : "posts",
+    "name" : "Rich Content",
+    "headline" : "Rich Content",
+    "description" : "A brief description of Hugo Shortcodes",
     "inLanguage" : "zh-cn",
     "author" : "Hugo Authors",
     "creator" : "Hugo Authors",
@@ -53,11 +58,11 @@
     "accountablePerson" : "Hugo Authors",
     "copyrightHolder" : "Hugo Authors",
     "copyrightYear" : "2019",
-    "datePublished": "2019-03-05 00:00:00 \x2b0000 UTC",
-    "dateModified" : "2019-03-05 00:00:00 \x2b0000 UTC",
-    "url" : "https:\/\/example.com\/post\/emoji-support\/",
-    "wordCount" : "118",
-    "keywords" : [ "emoji", "Mogeko`s Blog"]
+    "datePublished": "2019-03-10 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2019-03-10 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/nicesima.niceram.xyz\/2019\/03\/10\/rich-content\/",
+    "wordCount" : "0",
+    "keywords" : [ "shortcodes","privacy", "NiceBlog"]
 }
 </script>
 
@@ -72,7 +77,7 @@
         
             <div class="navbar-header header-back2home-logo">
                 <span class="logo_mark" >>$</span>
-                <a href="https://example.com">
+                <a href="https://nicesima.niceram.xyz">
                     <span class="logo_text" >cd /home/</span>
                     <span class="logo_cursor" ></span>
                 </a>
@@ -82,7 +87,7 @@
                 
                 <span class="menu">
                 
-                <a class="menu-item" href="/post/" title="">Blog</a>
+                <a class="menu-item" href="/posts/" title="">Blog</a>
                 
                 <a class="menu-item" href="/categories/" title="">Categories</a>
                 
@@ -103,7 +108,7 @@
      <div class="container">
         <div class="navbar">
             <div class="navbar-header header-logo">
-                    <a href="https://example.com">Mogeko`s Blog</a>
+                    <a href="https://nicesima.niceram.xyz">NiceBlog</a>
             </div>
             <div class="navbar-right">
                 <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
@@ -117,7 +122,7 @@
                 <nav class="mb-md">
                     
                     
-                        <a class="menu-item" href="/post/" title="">
+                        <a class="menu-item" href="/posts/" title="">
                             <h3>Blog</h3>
                             <div class="menu-active"></div>
                         </a>
@@ -146,17 +151,58 @@
                     
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Emoji Support</h1>
+        <h1 class="post-title" itemprop="name headline">Rich Content</h1>
         <div class="post-meta">
-                Written by <a itemprop="name" href="https://example.com" rel="author">Hugo Authors</a> with ♥
+                Written by <a itemprop="name" href="https://nicesima.niceram.xyz" rel="author">Hugo Authors</a> with ♥
                 <span class="post-time">
-                on <time datetime=2019-03-05 itemprop="datePublished">March 5, 2019</time>
+                on <time datetime=2019-03-10 itemprop="datePublished">March 10, 2019</time>
                 </span>
                 in
                 
-                <span class="post-word-count">118 words</span>
+                <span class="post-word-count">0 words</span>
         </div>
     </header>
+
+    
+          <div class="post-toc" id="post-toc">
+   <h2 class="post-toc-title"></h2>
+   
+   <div class="post-toc-content">
+     
+   </div>
+ </div>
+ <script type="text/javascript">
+   window.onload = function () {
+     var fix = $('.post-toc');
+     var end = $('.post-comment');
+     var fixTop = fix.offset().top, fixHeight = fix.height();
+     var endTop, miss;
+     var offsetTop = fix[0].offsetTop;
+     $('.post-toc-content:not(.always-active) a').click(function (e) {
+      $('.post-toc-content li').removeClass('has-active');
+      $(e.target).parents('.post-toc-content li').addClass('has-active');
+     })
+     $(window).scroll(function () {
+       var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+       if (end.length > 0) {
+         endTop = end.offset().top;
+         miss = endTop - docTop - fixHeight;
+       }
+       if (fixTop < docTop) {
+         fix.css({ 'position': 'fixed' });
+         if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+           fix.css({ top: miss });
+         } else {
+           fix.css({ top: 0 });
+         }
+       } else {
+         fix.css({ 'position': 'absolute' });
+         fix.css({ top: offsetTop });
+       }
+     }).scroll()
+   }
+ </script> 
+	
 
     <div class="post-content">
         
@@ -174,30 +220,21 @@
         
         
 
-        <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
-<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<!-- raw HTML omitted -->
-<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
-<hr>
-<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
-font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
-}</code></pre></div>
+        
     </div>
 
     <div class="post-copyright">
             
             <p class="copyright-item">
                 <span>Author:</span>
-                <span>Mogeko </span>
-                </p>
+                <span>niceRAM </span>
+            </p>
             
-
+            
             
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://example.com/post/emoji-support/>https://example.com/post/emoji-support/</span>
+                    <a href=https://nicesima.niceram.xyz/2019/03/10/rich-content/>https://nicesima.niceram.xyz/2019/03/10/rich-content/</a>
             </p>
             
             
@@ -213,23 +250,48 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
             <section>
             <i class="iconfont icon-tag"></i>Tag(s):
             
-            <span class="tag"><a href="https://example.com/tags/emoji/">
-                    #emoji</a></span>
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/shortcodes/">
+                    #shortcodes</a></span>
+            
+            <span class="tag"><a href="https://nicesima.niceram.xyz/tags/privacy/">
+                    #privacy</a></span>
             
             </section>
         
         <section>
                 <a href="javascript:window.history.back();">back</a></span> ·
-                <span><a href="https://example.com">home</a></span>
+                <span><a href="https://nicesima.niceram.xyz">home</a></span>
         </section>
     </div>
 
     <div class="post-nav">
         
+        <a href="https://nicesima.niceram.xyz/2019/03/09/placeholder-text/" class="prev" rel="prev" title="Placeholder Text"><i class="iconfont icon-left"></i>&nbsp;Placeholder Text</a>
         
-        <a href="https://example.com/post/math-typesetting/" class="next" rel="next" title="Math Typesetting">Math Typesetting&nbsp;<i class="iconfont icon-right"></i></a>
+        
+        <a href="https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/" class="next" rel="next" title="Markdown Syntax Guide">Markdown Syntax Guide&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
+
+    
+    <div class="post-social">
+        <div class="social-links">
+            
+
+
+
+
+
+ 
+
+
+
+
+
+
+        </div>
+    </div>
+    
 
     <div class="post-comment">
         
@@ -245,6 +307,7 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
         repo: '',
         owner: '',
         admin: [''],
+        proxy: '',
         id: location.pathname, 
         distractionFreeMode: false 
     });
@@ -267,17 +330,15 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
     <div class="copyright">
         &copy;
         
-        <span itemprop="copyrightYear">2017 - 2020</span>
+        <span itemprop="copyrightYear">2018 - 2021</span>
         
-        <span class="with-love">
-    	 <i class="iconfont icon-love"></i>
-         </span>
+        <span class="rotating">🌸</span>
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://example.com">Mogeko</a> | </span>
+            <span class="author" itemprop="copyrightHolder"><a href="https://nicesima.niceram.xyz">niceRAM</a> | </span>
          
 
          
-		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/niceRAM/nicesima" target="_blank" rel="external nofollow">nicesima</a></span>
     </div>
 </footer>
 
@@ -285,12 +346,22 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
 
 
 
-<script src="/js/vendor_main.min.js" defer ></script>
+
+<script defer src="/js/vendor_main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script> pangu.spacingPage();</script>
+
+
+
+
 
         </div>
     </body>

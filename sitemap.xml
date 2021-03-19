@@ -2,7 +2,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://example.com/</loc>
+      <loc>https://nicesima.niceram.xyz/archives/</loc>
       
       <lastmod>2019-05-28T00:00:00+00:00</lastmod>
       
@@ -12,17 +12,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/archives/</loc>
-      
-      <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://example.com/categories/</loc>
+      <loc>https://nicesima.niceram.xyz/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -32,7 +22,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/css/</loc>
+      <loc>https://nicesima.niceram.xyz/categories/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -42,7 +32,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/html/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/css/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -52,7 +42,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/markdown/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/html/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -62,7 +52,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/markdown-syntax/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/markdown/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -72,7 +62,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/</loc>
+      <loc>https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -82,7 +72,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/categories/syntax/</loc>
+      <loc>https://nicesima.niceram.xyz/posts/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -92,7 +82,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/</loc>
+      <loc>https://nicesima.niceram.xyz/categories/syntax/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -102,7 +92,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/themes/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -112,7 +102,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/categories/themes/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/themes/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -122,7 +112,17 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/privacy/</loc>
+      <loc>https://nicesima.niceram.xyz/categories/themes/</loc>
+      
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://nicesima.niceram.xyz/tags/privacy/</loc>
       
       <lastmod>2019-03-10T00:00:00+00:00</lastmod>
       
@@ -132,7 +132,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/rich-content/</loc>
+      <loc>https://nicesima.niceram.xyz/2019/03/10/rich-content/</loc>
       
       <lastmod>2019-03-10T00:00:00+00:00</lastmod>
       
@@ -142,7 +142,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/shortcodes/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/shortcodes/</loc>
       
       <lastmod>2019-03-10T00:00:00+00:00</lastmod>
       
@@ -152,7 +152,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/placeholder-text/</loc>
+      <loc>https://nicesima.niceram.xyz/2019/03/09/placeholder-text/</loc>
       
       <lastmod>2019-03-09T00:00:00+00:00</lastmod>
       
@@ -162,7 +162,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/text/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/text/</loc>
       
       <lastmod>2019-03-09T00:00:00+00:00</lastmod>
       
@@ -172,17 +172,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/math-typesetting/</loc>
-      
-      <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://example.com/tags/emoji/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/emoji/</loc>
       
       <lastmod>2019-03-05T00:00:00+00:00</lastmod>
       
@@ -192,7 +182,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/post/emoji-support/</loc>
+      <loc>https://nicesima.niceram.xyz/2019/03/05/emoji-support/</loc>
       
       <lastmod>2019-03-05T00:00:00+00:00</lastmod>
       
@@ -202,7 +192,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/about/</loc>
+      <loc>https://nicesima.niceram.xyz/about/</loc>
       
       <lastmod>2019-02-28T00:00:00+00:00</lastmod>
       
@@ -212,7 +202,7 @@
     </url>
   
     <url>
-      <loc>https://example.com/tags/index/</loc>
+      <loc>https://nicesima.niceram.xyz/tags/index/</loc>
       
       
       
