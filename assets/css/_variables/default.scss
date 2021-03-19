@@ -1,3 +1,9 @@
+/** common **/
+
+$scrollbar-thickness: 4px;
+$scrollbar-bold-thickness: 12px;
+
+
 /** light theme **/
 
 $light-background-color: #fff;
@@ -21,6 +27,8 @@ $light-pagination-link-active-color: #000;
 
 $light-border-color: #dcdcdc;
 
+$light-scrollbar-thumb-color: #EEEEEE;
+$light-scrollbar-thumb-hover-color: #DDDDDD;
 
 
 /** dark theme **/
@@ -47,3 +55,6 @@ $dark-pagination-link-active-color: #fff;
 $dark-border-color: #4a4b50;
 
 $dark-blockquote-background-color: #252529;
+
+$dark-scrollbar-thumb-color: #7F7F7F;
+$dark-scrollbar-thumb-hover-color: #6F6F6F;
