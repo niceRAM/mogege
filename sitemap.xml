@@ -2,7 +2,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://nicesima.niceram.xyz/archives/</loc>
+      <loc>https://niceram.xyz/nicesima/archives/</loc>
       
       <lastmod>2019-05-28T00:00:00+00:00</lastmod>
       
@@ -12,7 +12,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/</loc>
+      <loc>https://niceram.xyz/nicesima/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -22,7 +22,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/categories/</loc>
+      <loc>https://niceram.xyz/nicesima/categories/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -32,7 +32,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/css/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/css/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -42,7 +42,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/html/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/html/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -52,7 +52,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/markdown/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/markdown/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -62,7 +62,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/2019/03/11/markdown-syntax/</loc>
+      <loc>https://niceram.xyz/nicesima/2019/03/11/markdown-syntax/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -72,7 +72,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/posts/</loc>
+      <loc>https://niceram.xyz/nicesima/posts/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -82,7 +82,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/categories/syntax/</loc>
+      <loc>https://niceram.xyz/nicesima/categories/syntax/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -92,7 +92,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -102,7 +102,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/themes/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/themes/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -112,7 +112,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/categories/themes/</loc>
+      <loc>https://niceram.xyz/nicesima/categories/themes/</loc>
       
       <lastmod>2019-03-11T00:00:00+00:00</lastmod>
       
@@ -122,37 +122,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/privacy/</loc>
-      
-      <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://nicesima.niceram.xyz/2019/03/10/rich-content/</loc>
-      
-      <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://nicesima.niceram.xyz/tags/shortcodes/</loc>
-      
-      <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://nicesima.niceram.xyz/2019/03/09/placeholder-text/</loc>
+      <loc>https://niceram.xyz/nicesima/2019/03/09/placeholder-text/</loc>
       
       <lastmod>2019-03-09T00:00:00+00:00</lastmod>
       
@@ -162,7 +132,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/text/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/text/</loc>
       
       <lastmod>2019-03-09T00:00:00+00:00</lastmod>
       
@@ -172,7 +142,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/emoji/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/emoji/</loc>
       
       <lastmod>2019-03-05T00:00:00+00:00</lastmod>
       
@@ -182,7 +152,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/2019/03/05/emoji-support/</loc>
+      <loc>https://niceram.xyz/nicesima/2019/03/05/emoji-support/</loc>
       
       <lastmod>2019-03-05T00:00:00+00:00</lastmod>
       
@@ -192,7 +162,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/about/</loc>
+      <loc>https://niceram.xyz/nicesima/about/</loc>
       
       <lastmod>2019-02-28T00:00:00+00:00</lastmod>
       
@@ -202,7 +172,7 @@
     </url>
   
     <url>
-      <loc>https://nicesima.niceram.xyz/tags/index/</loc>
+      <loc>https://niceram.xyz/nicesima/tags/index/</loc>
       
       
       
