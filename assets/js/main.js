@@ -144,10 +144,41 @@ _Blog.addCopyBottons = function () {
   }
 }
 
+_Blog.initToc = function () {
+  var fix = $('.post-toc');
+  var end = $('.post-comment');
+  var fixTop = fix.offset().top, fixHeight = fix.height();
+  var endTop, miss;
+  var offsetTop = fix[0].offsetTop;
+  $('.post-toc-content:not(.always-active) a').click(function (e) {
+   $('.post-toc-content li').removeClass('has-active');
+   $(e.target).parents('.post-toc-content li').addClass('has-active');
+  })
+  $(window).scroll(function () {
+    var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    if (end.length > 0) {
+      endTop = end.offset().top;
+      miss = endTop - docTop - fixHeight;
+    }
+    if (fixTop < docTop) {
+      fix.css({ 'position': 'fixed' });
+      if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+        fix.css({ top: miss });
+      } else {
+        fix.css({ top: 0 });
+      }
+    } else {
+      fix.css({ 'position': 'absolute' });
+      fix.css({ top: offsetTop });
+    }
+  }).scroll()
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  _Blog.addCopyBottons()
   _Blog.switchDarkMode()
   _Blog.switchMobileMenu()
   _Blog.scrollIndicator()
+  _Blog.addCopyBottons()
   _Blog.changeTile()
+  _Blog.initToc()
 })
