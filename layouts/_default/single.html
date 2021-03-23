@@ -49,6 +49,39 @@
         {{ $finalContent := $tmpContent | replaceRE $reImgTitleIn $reImgTitleOut | safeHTML }}
 
         {{ $finalContent }}
+
+        {{ $context := .}}
+        {{ with .Params.relations }}
+        <div class="post-rel">
+            <h2 id="相关文章">相关文章</h2>
+            <ul>
+                {{ range . }}
+                    {{ $title := index . 0 | default (index . 1) }}
+                    {{ $link := index . 1 }}
+                <li>
+                    <a href="{{ ref $context $link }}">{{ $title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    
+        {{ with .Params.references }}
+        <div class="post-ref">
+            <h2 id="参考链接">参考链接</h2>
+            <ul>
+                {{ range . }}
+                    {{ $title := index . 0 | default (index . 1) }}
+                    {{ $link := index . 1 }}
+                    {{ $author := index . 2 | default nil }}
+                <li>
+                    <a href="{{ $link }}">{{ $title }}</a>
+                    {{ with $author }}, {{ . }} {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
     </div>
 
     <div class="post-copyright">
