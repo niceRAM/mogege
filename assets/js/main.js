@@ -146,8 +146,12 @@ _Blog.addCopyBottons = function () {
 
 _Blog.initToc = function () {
   var fix = $('.post-toc');
+  if (!fix.length) {
+    return;
+  }
   var end = $('.post-comment');
-  var fixTop = fix.offset().top, fixHeight = fix.height();
+  var fixTop = fix.offset().top;
+  var fixHeight = fix.height();
   var endTop, miss;
   var offsetTop = fix[0].offsetTop;
   $('.post-toc-content:not(.always-active) a').click(function (e) {
